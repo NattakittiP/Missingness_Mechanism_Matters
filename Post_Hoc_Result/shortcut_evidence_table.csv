@@ -1,0 +1,10 @@
+mechanism,rate_pct,n_features,mean_indicator_auroc,median_indicator_auroc,max_indicator_auroc,top_feature,top_feature_indicator_auroc,top_feature_missing_rate,mean_abs_deviation_from_chance
+MAR,30.0,39,0.5043,0.5303,0.5834,marital_status,0.5834,0.393,0.0511
+MAR,40.0,39,0.5291,0.5516,0.5852,marital_status,0.5852,0.5145,0.0551
+MAR,50.0,39,0.5468,0.5664,0.5898,marital_status,0.5898,0.6107,0.0577
+MCAR,30.0,39,0.4516,0.479,0.5523,marital_status,0.5523,0.3184,0.0525
+MCAR,40.0,39,0.458,0.4821,0.5434,marital_status,0.5434,0.4173,0.0456
+MCAR,50.0,39,0.4648,0.486,0.5376,marital_status,0.5376,0.5135,0.0373
+MNAR,30.0,39,0.7227,0.7686,0.8138,marital_status,0.8138,0.186,0.2285
+MNAR,40.0,39,0.7967,0.8443,0.8767,admission_type,0.8767,0.22,0.2967
+MNAR,50.0,39,0.7767,0.8207,0.8519,anchor_year_group,0.8519,0.2678,0.2767

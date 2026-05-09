@@ -1,0 +1,28 @@
+\begin{table}
+\caption{Mechanism-specific robustness summary under matched missingness rates. Winner flip, ranking stability, AUROC margin, missingness-indicator shortcut signal, and winner-level calibration are summarized across 20 seeds.}
+\label{tab:ibcast_mechanism_summary}
+\begin{tabular}{llrrrrrllrrrrrrrlrlrrrrr}
+\toprule
+mechanism & split & rate_pct & n_seeds & flip_pct & kendall_tau_mean & spearman_rho_mean & top1_mode & top2_mode & auroc_margin_pp & auroc_margin_ci95_lo_pp & auroc_margin_ci95_hi_pp & frac_top1_dominant & frac_tied_or_flipped & mean_indicator_auroc & max_indicator_auroc & top_feature & top_feature_indicator_auroc & mode_winner & mode_winner_pct & winner_auroc_mean & winner_ap_mean & winner_brier_mean & winner_ece_mean \\
+\midrule
+MAR & S1 & 30.0000 & 20 & 0.0000 & 0.8900 & 0.9450 & xgb & extratrees & 1.1867 & 0.9636 & 1.4097 & 0.9500 & 0.0500 & 0.5043 & 0.5834 & marital_status & 0.5834 & xgb & 100.0000 & 0.9107 & 0.3664 & 0.0198 & 0.0059 \\
+MAR & S1 & 40.0000 & 20 & 10.0000 & 0.8500 & 0.9150 & xgb & extratrees & 1.4435 & 1.0907 & 1.7963 & 0.8000 & 0.2000 & 0.5291 & 0.5852 & marital_status & 0.5852 & xgb & 90.0000 & 0.8665 & 0.2655 & 0.0217 & 0.0050 \\
+MAR & S1 & 50.0000 & 20 & 55.0000 & 0.7400 & 0.8250 & xgb & rf & 0.6387 & 0.4080 & 0.8694 & 0.3500 & 0.6500 & 0.5468 & 0.5898 & marital_status & 0.5898 & xgb & 45.0000 & 0.7770 & 0.1384 & 0.0237 & 0.0033 \\
+MAR & S2 & 30.0000 & 20 & 0.0000 & 0.8700 & 0.9350 & xgb & extratrees & 1.3300 & 1.0826 & 1.5773 & 0.9500 & 0.0500 & 0.5043 & 0.5834 & marital_status & 0.5834 & xgb & 100.0000 & 0.9116 & 0.3615 & 0.0199 & 0.0066 \\
+MAR & S2 & 40.0000 & 20 & 0.0000 & 0.8700 & 0.9350 & xgb & extratrees & 1.4164 & 1.1425 & 1.6903 & 0.9500 & 0.0500 & 0.5291 & 0.5852 & marital_status & 0.5852 & xgb & 100.0000 & 0.8642 & 0.2576 & 0.0217 & 0.0057 \\
+MAR & S2 & 50.0000 & 20 & 30.0000 & 0.8200 & 0.8900 & xgb & extratrees & 0.5701 & 0.3898 & 0.7504 & 0.4000 & 0.6000 & 0.5468 & 0.5898 & marital_status & 0.5898 & xgb & 70.0000 & 0.7783 & 0.1388 & 0.0236 & 0.0050 \\
+MCAR & S1 & 30.0000 & 20 & 15.0000 & 0.9100 & 0.9500 & xgb & rf & 0.3967 & 0.2686 & 0.5248 & 0.2500 & 0.7500 & 0.4516 & 0.5523 & marital_status & 0.5523 & xgb & 85.0000 & 0.9368 & 0.4669 & 0.0180 & 0.0061 \\
+MCAR & S1 & 40.0000 & 20 & 15.0000 & 0.8500 & 0.9100 & xgb & extratrees & 0.4890 & 0.3552 & 0.6228 & 0.5000 & 0.5000 & 0.4580 & 0.5434 & marital_status & 0.5434 & xgb & 85.0000 & 0.9253 & 0.4281 & 0.0188 & 0.0062 \\
+MCAR & S1 & 50.0000 & 20 & 20.0000 & 0.8300 & 0.9000 & xgb & extratrees & 0.3850 & 0.2243 & 0.5456 & 0.2500 & 0.7500 & 0.4648 & 0.5376 & marital_status & 0.5376 & xgb & 80.0000 & 0.9110 & 0.3857 & 0.0196 & 0.0057 \\
+MCAR & S2 & 30.0000 & 20 & 5.0000 & 0.8600 & 0.9250 & xgb & rf & 0.5480 & 0.3988 & 0.6973 & 0.6000 & 0.4000 & 0.4516 & 0.5523 & marital_status & 0.5523 & xgb & 95.0000 & 0.9356 & 0.4525 & 0.0182 & 0.0066 \\
+MCAR & S2 & 40.0000 & 20 & 15.0000 & 0.8700 & 0.9250 & xgb & extratrees & 0.4026 & 0.2818 & 0.5235 & 0.3000 & 0.7000 & 0.4580 & 0.5434 & marital_status & 0.5434 & xgb & 85.0000 & 0.9242 & 0.4170 & 0.0189 & 0.0058 \\
+MCAR & S2 & 50.0000 & 20 & 20.0000 & 0.8300 & 0.9000 & xgb & extratrees & 0.5661 & 0.3819 & 0.7503 & 0.4500 & 0.5500 & 0.4648 & 0.5376 & marital_status & 0.5376 & xgb & 80.0000 & 0.9142 & 0.3800 & 0.0197 & 0.0059 \\
+MNAR & S1 & 30.0000 & 20 & 5.0000 & 0.8900 & 0.9450 & xgb & rf & 0.2149 & 0.1281 & 0.3017 & 0.1500 & 0.8500 & 0.7227 & 0.8138 & marital_status & 0.8138 & xgb & 95.0000 & 0.9945 & 0.8679 & 0.0087 & 0.0071 \\
+MNAR & S1 & 40.0000 & 20 & 100.0000 & 0.6200 & 0.7700 & rf & xgb & 0.0133 & 0.0088 & 0.0177 & 0.0000 & 1.0000 & 0.7967 & 0.8767 & admission_type & 0.8767 & rf & 100.0000 & 0.9984 & 0.9092 & 0.0057 & 0.0138 \\
+MNAR & S1 & 50.0000 & 20 & 60.0000 & 0.7100 & 0.8200 & rf & xgb & 0.0229 & 0.0137 & 0.0322 & 0.0000 & 1.0000 & 0.7767 & 0.8519 & anchor_year_group & 0.8519 & rf & 60.0000 & 0.9978 & 0.8723 & 0.0062 & 0.0110 \\
+MNAR & S2 & 30.0000 & 20 & 30.0000 & 0.8600 & 0.9250 & xgb & rf & 0.1431 & 0.0776 & 0.2087 & 0.0500 & 0.9500 & 0.7227 & 0.8138 & marital_status & 0.8138 & xgb & 70.0000 & 0.9945 & 0.8639 & 0.0096 & 0.0112 \\
+MNAR & S2 & 40.0000 & 20 & 75.0000 & 0.6700 & 0.8150 & rf & xgb & 0.0155 & 0.0096 & 0.0214 & 0.0000 & 1.0000 & 0.7967 & 0.8767 & admission_type & 0.8767 & rf & 75.0000 & 0.9984 & 0.9111 & 0.0052 & 0.0113 \\
+MNAR & S2 & 50.0000 & 20 & 40.0000 & 0.7600 & 0.8800 & xgb & rf & 0.0136 & 0.0065 & 0.0207 & 0.0000 & 1.0000 & 0.7767 & 0.8519 & anchor_year_group & 0.8519 & xgb & 60.0000 & 0.9978 & 0.8768 & 0.0056 & 0.0087 \\
+\bottomrule
+\end{tabular}
+\end{table}
