@@ -1,7 +1,7 @@
 # Missingness Mechanism Matters
 ## Missingness Mechanism Matters: Auditing Clinical Model Selection Stability Under MCAR, MAR, and MNAR Perturbations
 
-**Nattakitti Piyavechvirat · Faizan ul Haq · Qazi Mazhar ul Haq**   
+**Nattakitti Piyavechvirat**   
 International Bachelor Program in Informatics, Yuan Ze University, Taiwan
  
 ---
